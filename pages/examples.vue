@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Heading from "digital-agency-design-system/digital-agency-design-system-vue/src/components/Heading.vue";
 import Layout from "digital-agency-design-system/digital-agency-design-system-vue/src/components/Layout.vue";
+import BasicButton from "digital-agency-design-system/digital-agency-design-system-vue/src/components/BasicButton.vue";
 import RadioGroup from "digital-agency-design-system/digital-agency-design-system-vue/src/components/RadioGroup.vue";
 import Checkbox from "digital-agency-design-system/digital-agency-design-system-vue/src/components/Checkbox.vue";
 import CheckboxGroup from "digital-agency-design-system/digital-agency-design-system-vue/src/components/CheckboxGroup.vue";
@@ -15,6 +16,31 @@ useHead({
   title: "コンポーネント郡",
   bodyAttrs: {
     class: "color-scheme-light",
+  },
+});
+
+definePageMeta({
+  pageTransition: {
+    name: "slide-right",
+    mode: "out-in",
+  },
+  middleware: (to, from) => {
+    if (
+      from.meta.pageTransition &&
+      typeof from.meta.pageTransition !== "boolean" &&
+      "name" in from.meta.pageTransition
+    ) {
+      from.meta.pageTransition.name =
+        from.path === "/onetime" ? "slide-left" : "slide-right";
+    }
+    if (
+      to.meta.pageTransition &&
+      typeof to.meta.pageTransition !== "boolean" &&
+      "name" in to.meta.pageTransition
+    ) {
+      to.meta.pageTransition.name =
+        from.path === "/onetime" ? "slide-left" : "slide-right";
+    }
   },
 });
 
@@ -55,7 +81,7 @@ const pankuzu = [
   { text: "デジタル庁における入札制限等の在り方に関する検討会" },
 ];
 
-const colorScheme = ref<"light" | "dark" | null>(null);
+const colorScheme = ref<"light" | "dark" | null>("light");
 
 // カラースキームの設定
 watch(colorScheme, (color) => {
@@ -89,17 +115,6 @@ watch(colorScheme, (color) => {
       type="tertiary"
       @click="handleClick"
     ></BasicButton>
-    <div class="colorScheme">
-      <RadioGroup
-        v-model="colorScheme"
-        groupLabel="テーマカラー"
-        :labels="['ライトモード', 'ダークモード']"
-        :values="['light', 'dark']"
-        helpText="サイトのテーマカラーを選択できます"
-        name="color"
-        :isRequired="false"
-      />
-    </div>
     <div class="inputWrapper">
       <FamilyNameInput />
       <UseTelInputComponent />

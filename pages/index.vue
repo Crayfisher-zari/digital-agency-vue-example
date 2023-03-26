@@ -17,8 +17,11 @@ useHead({
   },
 });
 definePageMeta({
+  pageTransition:{
+    name:"slide-right",
+    mode:"out-in"
+  },
   middleware: (to, from) => {
-    console.log("login");
     if (
       from.meta.pageTransition &&
       typeof from.meta.pageTransition !== "boolean" &&

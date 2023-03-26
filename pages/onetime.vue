@@ -12,16 +12,18 @@ useHead({
   },
 });
 definePageMeta({
+  pageTransition:{
+    name:"slide-right",
+    mode:"out-in"
+  },
   middleware: (to, from) => {
     if (
       from.meta.pageTransition &&
       typeof from.meta.pageTransition !== "boolean" &&
       "name" in from.meta.pageTransition
     ) {
-      let transitionName = undefined;
-      if( from.path === "/")
       from.meta.pageTransition.name =
-        from.path === "/" ? "slide-left" : undefined;
+        from.path === "/" ? "slide-left" : "slide-right";
     }
     if (
       to.meta.pageTransition &&
@@ -29,7 +31,7 @@ definePageMeta({
       "name" in to.meta.pageTransition
     ) {
       to.meta.pageTransition.name =
-        from.path === "/" ? "slide-left" : undefined;
+        from.path === "/" ? "slide-left" :  "slide-leftBack";
     }
   },
 });
