@@ -59,6 +59,7 @@ watch(password,()=>{
         type="text"
         placeHolder="000000"
       />
+      <small>※認証機能はなく、入力情報はどこにも送信されません。</small>
       <BasicButton label="アプリをダウンロードしていない方はこちら" type="tertiary" @click="handleBack" />
       <BasicButton label="戻る" type="secondary" @click="handleBack" class="backButton"/>
     </div>

@@ -48,6 +48,7 @@ definePageMeta({
       <div class="loginForm">
         <UseEmailInputComponent />
         <UsePasswordInputComponent />
+        <small>※認証機能はなく、入力情報はどこにも送信されません。</small>
       </div>
       <div class="loginButtons">
         <BasicButton label="ログイン" @click="handleLogin" />
