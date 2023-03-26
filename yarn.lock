@@ -1586,7 +1586,7 @@ detect-libc@^2.0.0:
 
 "digital-agency-design-system@github:Crayfisher-zari/digital-agency-design-system":
   version "0.0.0"
-  resolved "https://codeload.github.com/Crayfisher-zari/digital-agency-design-system/tar.gz/4ce481f6e80f866e43e68535d9ac392884d50d2a"
+  resolved "https://codeload.github.com/Crayfisher-zari/digital-agency-design-system/tar.gz/9e104f2894f26ed54348f771227c6d9e9b21d72d"
 
 dir-glob@^3.0.1:
   version "3.0.1"
