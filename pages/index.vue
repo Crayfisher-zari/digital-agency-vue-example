@@ -17,9 +17,9 @@ useHead({
   },
 });
 definePageMeta({
-  pageTransition:{
-    name:"slide-right",
-    mode:"out-in"
+  pageTransition: {
+    name: "slide-right",
+    mode: "out-in",
   },
   middleware: (to, from) => {
     if (
@@ -45,17 +45,15 @@ definePageMeta({
   <Layout>
     <div class="colSpan-9">
       <Heading :headingLevel="1">ログイン</Heading>
-      <form action="#">
-        <div class="loginForm">
-          <UseEmailInputComponent />
-          <UsePasswordInputComponent />
-        </div>
-        <div class="loginButtons">
-          <BasicButton label="ログイン" @click="handleLogin" />
-          <BasicButton label="新規登録" type="secondary" />
-          <BasicButton label="パスワードをお忘れの方" type="tertiary" />
-        </div>
-      </form>
+      <div class="loginForm">
+        <UseEmailInputComponent />
+        <UsePasswordInputComponent />
+      </div>
+      <div class="loginButtons">
+        <BasicButton label="ログイン" @click="handleLogin" />
+        <BasicButton label="新規登録" type="secondary" />
+        <BasicButton label="パスワードをお忘れの方" type="tertiary" />
+      </div>
     </div>
   </Layout>
 </template>
