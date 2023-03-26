@@ -1,0 +1,1 @@
+import{l as t,e as _,G as s,o}from"./entry.e61b0188.js";const a={},n={class:"globalWrapper"};function c(e,r){return o(),_("div",n,[s(e.$slots,"default",{},void 0,!0)])}const l=t(a,[["render",c],["__scopeId","data-v-ef88f565"]]);export{l as default};
