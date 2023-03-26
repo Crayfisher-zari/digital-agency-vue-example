@@ -6,7 +6,6 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
     },
     baseURL:"/digital-agency-vue-example/",
-    buildAssetsDir:"/assets/"
   },
   css: [
     "/assets/style/style.scss",
