@@ -12,12 +12,11 @@ const handleLogin = () => {
 };
 useHead({
   title: "ログイン",
+  bodyAttrs: {
+    class: "color-scheme-light",
+  },
 });
 definePageMeta({
-  pageTransition: {
-    name: "slide-left",
-    mode: "out-in",
-  },
   middleware: (to, from) => {
     console.log("login");
     if (

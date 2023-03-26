@@ -1,3 +1,11 @@
+<script>
+useHead({
+  bodyAttrs: {
+    class: "color-scheme-light",
+  },
+});
+</script>
+
 <template>
   <div>
     <NuxtLayout>

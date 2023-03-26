@@ -1586,7 +1586,7 @@ detect-libc@^2.0.0:
 
 "digital-agency-design-system@github:Crayfisher-zari/digital-agency-design-system":
   version "0.0.0"
-  resolved "https://codeload.github.com/Crayfisher-zari/digital-agency-design-system/tar.gz/2ee571b8545eb853e0bf7ab95e8935f4665978e9"
+  resolved "https://codeload.github.com/Crayfisher-zari/digital-agency-design-system/tar.gz/5595f99226fbf3dba23fc0e7b5d215e9f5d19aca"
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -2849,7 +2849,7 @@ nuxi@3.3.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt@^3.3.2:
+nuxt@3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.3.2.tgz#02f2f4594eb59a56da115651f6a5e913b47914e7"
   integrity sha512-9xNd9+7M03oYktHnuEEgNRJYfkFwjlLvRi1NsEuEyzcc0SgazGZT89CBsQnlWI3wFMhoxoYPGJ8rc4sJAhJ1Gg==

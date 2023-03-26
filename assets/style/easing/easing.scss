@@ -2,7 +2,7 @@
  * アニメーションの秒数、イージング関数の変数です
  */
 :root {
-  --base-duration: 5s;
+  --base-duration: 0.4s;
   @media (prefer-reduce-motion) {
     --base-duration: 0s;
   }

@@ -7,6 +7,6 @@ export default defineNuxtConfig({
     },
   },
   css: [
-    "digital-agency-design-system/digital-agency-design-system-vue/src/assets/style/style.scss",
+    "/assets/style/style.scss",
   ],
 });
